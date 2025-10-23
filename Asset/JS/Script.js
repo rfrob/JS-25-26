@@ -79,3 +79,24 @@ let bonnesNotes = notes.filter(function(note) { /* filter pour chaque élément 
   return note >= 10;
 });
 console.log(bonnesNotes);
+
+
+// DOM - Document Object Model
+
+const tousLesLi = document.querySelectorAll('ul li');
+tousLesLi.forEach(item => {
+    console.log(item);
+})
+console.log(tousLesLi);
+
+
+const monTitre = document.querySelector('h1');
+monTitre.textContent = "Nouveau titre modifié par JS";
+//monTitre.innerHTML= "<strong>salut</strong>";
+monTitre.style.color = "green";
+monTitre.style.backgroundColor = "lightgreen";
+monTitre.classList.add("titre");
+monTitre.classList.remove("titre");
+monTitre.classList.toggle("titre");
+
+
